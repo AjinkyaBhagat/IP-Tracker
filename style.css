@@ -101,6 +101,14 @@ body {
     #122d14,
     #060806
   ); */
+  background-image: linear-gradient(
+    to right,
+    #099e09,
+    #0e7617,
+    #125018,
+    #122d14,
+    #060806
+  );
 }
 
 .lookup-btn,
