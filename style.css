@@ -11,7 +11,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: url(ip.jpg) no-repeat;
+
   background-size: cover;
   color: whitesmoke;
   padding: 10px;
@@ -20,14 +20,14 @@ body {
 .container {
   font-family: "Gothic A1", sans-serif;
   /* font-family: "Raleway", sans-serif; */
-
+  background-image: url("ip.jpg");
   max-width: 700px;
   position: absolute;
   width: 100%;
-  background-color: #64a6bd;
+  /* background-color: #64a6bd; */
   padding: 25px 30px;
   border-radius: 15px;
-  background: none;
+  /* background: none; */
   box-shadow: 1px saddlebrown;
   height: 400px;
   justify-content: flex-start;
@@ -50,35 +50,15 @@ body {
 .user-details {
   position: relative;
   margin-top: 20px;
-  /* margin-left: 200px; */
 }
 
-/* .container .user-details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 20px 0 12px 0;
-}
-
-.user-details {
-  font-weight: 500;
-  display: block;
-  margin-bottom: 5px;
-} */
 .ip-display,
 .location-display,
 .geo-display,
 .pincode-display,
 .network-display {
   margin-top: 10px;
-  /* background-image: linear-gradient(
-    to right,
-    #9e4009,
-    #9e4009,
-    #9e4009,
-    #9e4009,
-    #9e4009
-  ); */
+
   background-color: whitesmoke;
   border-radius: 5px;
   color: black;
@@ -94,14 +74,6 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   border-radius: 5px;
-  /* background-image: linear-gradient(
-    to right,
-    #099e09,
-    #0e7617,
-    #125018,
-    #122d14,
-    #060806
-  ); */
   background-image: linear-gradient(
     to right,
     #099e09,
@@ -115,7 +87,6 @@ body {
 .lookup-btn,
 .reset-btn:hover {
   cursor: pointer;
-  /* background: linear-gradient(-135deg, #71b7e6, #9b59b6); */
 }
 .button {
   display: flex;
@@ -127,7 +98,7 @@ body {
 
 @media (max-width: 585px) {
   .container {
-    max-width: 100%;
+    width: 70%;
   }
 
   form .user-details .input-box {
