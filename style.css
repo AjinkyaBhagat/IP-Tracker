@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Raleway:ital,wght@1,300&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url(ip.jpg) no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.container {
+  font-family: "Gothic A1", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+
+  max-width: 700px;
+  position: absolute;
+  width: 100%;
+  background-color: #64a6bd;
+  padding: 25px 30px;
+  border-radius: 15px;
+  background: none;
+  box-shadow: 1px saddlebrown;
+  height: 400px;
+  justify-content: flex-start;
+}
+.container .title {
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 20px;
+  background-image: linear-gradient(
+    to right,
+    #099e09,
+    #0e7617,
+    #125018,
+    #122d14,
+    #060806
+  );
+}
+
+.user-details {
+  position: relative;
+  margin-top: 20px;
+  /* margin-left: 200px; */
+}
+
+/* .container .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 20px 0 12px 0;
+}
+
+.user-details {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+} */
+.ip-display,
+.location-display,
+.geo-display,
+.pincode-display,
+.network-display {
+  margin-top: 10px;
+  /* background-image: linear-gradient(
+    to right,
+    #9e4009,
+    #9e4009,
+    #9e4009,
+    #9e4009,
+    #9e4009
+  ); */
+  background-color: whitesmoke;
+  border-radius: 5px;
+  color: black;
+}
+
+.lookup-btn {
+  height: 100%;
+  width: 20%;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    #099e09,
+    #0e7617,
+    #125018,
+    #122d14,
+    #060806
+  );
+}
+
+.lookup-btn:hover {
+  cursor: pointer;
+  /* background: linear-gradient(-135deg, #71b7e6, #9b59b6); */
+}
+.button {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 45px;
+  margin: 45px 0px;
+}
+
+@media (max-width: 585px) {
+  .container {
+    max-width: 100%;
+  }
+
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .container form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 0;
+  }
+}
